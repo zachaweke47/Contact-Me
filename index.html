@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="About Me">
+    <meta name="author" content="Josh Gibson">
+    <meta name="robots" content="noindex">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/architect-s-daughter" type="text/css"/>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Contact Me</h1>
+      <nav>
+        <ul>
+        <li><a href="https://zachaweke47.github.io/home/.">Home</a></li>
+          <li><a href=" https://zachaweke47.github.io/aboutMe/.">About</a></li>
+          <li><a href=" https://zachaweke47.github.io/coursework-/.">Coursework</a></li>
+          <li><a href="https://zachaweke47.github.io/Artifacts/">Artifacts</a></li>
+          <li><a href="https://zachaweke47.github.io/Module-Assignments/.">Module Assignments</a></li>
+          <li><a href="">Contact Me</a></li>
+          <li><a href="">My Interests</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form action="thankyou.html" method="get"  name="userForm" onsubmit="return Validate()">
+          <label>Name:</label><br>
+          <input type="text" name="nameLoc" id="nameLoc" size="34"><br>
+          <div id="nameError" class="error"></div><br>
+
+          <label>Email:</label><br>
+          <input type="email" name="emailLoc" id="emailLoc" size="34">
+          <div id="emailError" class="error"></div><br>
+
+          <label>Comments:</label><br>
+          <textarea name="commentsLoc" id="commentsLoc" cols="30" rows="6"></textarea>
+          <div id="commentsError" class="error"></div><br>
+
+          <input type="submit" name="submit" value="Submit">
+        </form>
+        <div id="warning">
+          <p><strong>Please be aware that this form is a proof of concept only for validating data, and will not submit your data anywhere.</strong></p>
+        </div>
+
+        
+      </section>
+    </main>
+
+    <footer>
+      <p id="date-time"></p>
+      <br>
+      <a href="http://www.w3.org/html/logo/">
+        <img src="https://www.w3.org/html/logo/badge/html5-badge-h-css3-semantics.png" width="165" height="64" alt="HTML5 Powered with CSS3 / Styling, and Semantics" title="HTML5 Powered with CSS3 / Styling, and Semantics">
+      </a><br>
+      <a href="https://validator.w3.org/check?uri=referer" target="_blank">W3C Validator</a><br>
+      <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">CSS Validator</a>
+      
+    </footer>
+    <div class="footer"> <h3>© Copyright 2018 |</h3> 
+      <p id="date"></p>
+
+      <script src="date.js"></script></div>
+
+
+  </body>
+</html>
